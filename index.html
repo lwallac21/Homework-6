@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="Assets/moment.min.js"></script>
+    <script defer src="openweather.js"></script>
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class='container-fluid bg-dark d-flex justify-content-center'>
+        <h4 class='text-light'>Weather Dashboard</h4>
+    </section>
+    <div class='container'>
+        <div class="row">
+            <div class="col-4">
+                <h4>Search for a city</h4>
+                <br>
+                <input id="search-city" for="search">
+                <button id="search-button" class="button btn-md btn-primary">Search</button>
+                <br>
+                <div id="history">
+
+                </div>
+            </div>
+            <div class="col-6">
+                <h2 id="city">The weather in </h2>
+                <p id="temp"></p>
+                <p id="humidity"></p>
+                <p id="wind"></p>
+                <p id="uv">UV-index</p>
+            </div>
+            <div class="col-2">
+                <img class="img-fluid" id="icon">
+            </div>
+            <br>
+            <div class="container">
+                <h2>5-Day Forcast:</h2>
+
+                <div id="5day"class="row d-none">
+                    <div id="day1" class="fiveday col-2" data-day='1'>
+                        <h4 id="forcast1">
+                            </h3>
+                            <img id="icon1" style="display: block; height: auto; max-width: 100%;">
+                            <h4 id="temp1"></h4>
+                            <h4 id="humidity1"></h4>
+                    </div>
+                    <div id="day2" class="fiveday col-2" data-day='2'>
+                        <h4 id="forcast2">
+                            </h3>
+                            <img id="icon2" class="img-fluid">
+                            <h4 id="temp2"></h4>
+                            <h4 id="humidity2"></h4>
+                    </div>
+                    <div id="day3" class="fiveday col-2" data-day='3'>
+                        <h4 id="forcast3">
+                            </h3>
+                            <img id="icon3" class="img-fluid">
+                            <h4 id="temp3"></h4>
+                            <h4 id="humidity3"></h4>
+                    </div>
+                    <div id="day4" class="fiveday col-2" data-day='4'>
+                        <h4 id="forcast4">
+                            </h3>
+                            <img id="icon4" class="img-fluid">
+                            <h4 id="temp4"></h4>
+                            <h4 id="humidity4"></h4>
+                    </div>
+                    <div id="day5" class="fiveday col-2" date-day='5'>
+                        <h4 id="forcast5">
+                            </h3>
+                            <img id="icon5" class="img-fluid">
+                            <h4 id="temp5"></h4>
+                            <h4 id="humidity5"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
